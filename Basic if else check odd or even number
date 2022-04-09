@@ -1,0 +1,12 @@
+# Checking the number if it is even or odd number
+
+#the number should be in integer since we assume not to use numbers with decimal points
+number = int(input("Which number do you want to check? "))
+
+# The == function means that it is checking for the value to be 0
+if (number%2==0):
+  print("This is an even number.")
+else:
+  print("This is an odd number")
+
+
