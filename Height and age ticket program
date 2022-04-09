@@ -1,0 +1,23 @@
+#Checks for height and then age of the customer
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height>=120:
+  print("You can buy a ticket.")
+  age=int(input("How old are you? "))
+  
+#after the if condition is satisfied meaning the height is >=120 this if gets triggered
+  if age>=18:
+      print("You have to pay 12 dollars.")
+      
+#Now if the first if is not satisfied (age is not >=18) you can use elif to create another condtion. You can have as many elif conditions as you want.
+
+  elif age>11:
+      print("You have to pay 7 dollars.")
+      
+#The last condition would still be an else
+  else:
+      print("You have to pay 5 dollars.")
+else:
+  print("See you later dwarf.")
