@@ -1,0 +1,20 @@
+#Tip calculator program
+#We get the data needed
+print("Welcome to the Tip Calculator!")
+bill=input("What was the total bill? $")
+ptip=input("How much would you like to give? 10, 12, or 15? ")
+pax=input("How many people will split the bill? ")
+#We use float because we now the bill and the tip are most likely going to have cents
+tip=float(bill)*(float(ptip)/100)
+#We simply show the tip computed
+print(f"The tip is {tip}")
+#adding up the data
+tbill=tip+float(bill)
+share=(tbill/int(pax))
+#Using a new command to format the outcome to two decimal cents because using round only shows one 0.
+fin="{:.2f}".format(share)
+print(f"Each person should pay: ${fin}")
+
+#Input: 150, 12, 5
+#Output: The tip is 18.0
+#Output: Each person should pay: $33.60
