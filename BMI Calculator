@@ -8,9 +8,11 @@ nh=float(height)
 nw=float(weight)
 
 #We need to round off the number so we can use int
-BMI=int(nw/(nh*nh))
+BMI1=int(nw/(nh*nh))
 
 #Alternative operation
 BMI2=int(nw/(nh**2))
 
-print(BMI)
+print(BMI1)
+print(BMI2)
+True(BMI1=BMI2)
