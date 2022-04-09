@@ -1,0 +1,27 @@
+#Checks if the year is a leap year
+year = int(input("Which year do you want to check? "))
+
+#Evenly divisible meaning it has no remainder
+#It is a leap year if the year is evenly divisible by 4, evenly divisible by 100 and evenly divisible by 400
+#It is a leap year if the year is evenly divisible by 4, not evenly divisible by 100 
+
+a=year%4
+b=year%100
+c=year%400
+
+#First check if all the variables (a,b,c) are zero which is a leapyear
+
+if a==0:
+  if b==0:
+    if c==0:
+      print("Yes it is a leap year.")
+      # If variables (a,b) is zero but (c) is not then it is not a leap year
+    else:
+      print("Not a leap year)")
+      # If variable (a) is zero but (b) is not then it is a leap year
+  else:
+    print("Yes it is a leap year.")
+    # If variable (a) is not zero then it is not a leap year
+else:
+  print("Not a leap year")
+  
