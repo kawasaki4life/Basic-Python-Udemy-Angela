@@ -1,0 +1,11 @@
+#This program asks your name
+#The len function to retrieve the number of character or length
+#str function then converts it to a string which can then be added to the phrase(string)
+name=input("What is your name? ")
+print("You name is " + str(len(name))+ " characters long")
+
+#Example 
+#Input: kawasaki
+#Output: Your name is 8 characters long
+
+
