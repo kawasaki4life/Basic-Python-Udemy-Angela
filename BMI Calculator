@@ -15,4 +15,3 @@ BMI2=int(nw/(nh**2))
 
 print(BMI1)
 print(BMI2)
-True(BMI1=BMI2)
