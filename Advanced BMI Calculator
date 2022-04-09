@@ -1,0 +1,47 @@
+# ADvanced BMI Calculator with elif function
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+
+bmi=weight/(height*height)
+#{} denotes it is a literal
+#: introduces it is a format spec
+#0 enables sign-aware zero-padding for numeric types
+#.2 sets the precision to two decimal points
+#f displays the number as a fixed-point number
+print("Your BMI is "+"{:0.2f}".format(bmi))
+#The desired output is a BMI with two decimal points after zero
+
+#The program must check for if the BMI is greater than or equal to 35 first it counts down from 35
+if bmi>=35:
+  print("You are clinically obese.")
+#At this point if the value is less than 35 it runs the line below
+elif bmi>=30:
+  print("You are obese.")
+#At this point if the value is less than 30 it runs the line below
+elif bmi>=25:
+  print("You are overweight.")
+#At this point if the value is less than 25 it runs the line below
+elif bmi>=18.5:
+  print("You have a normal weight.")
+ #At this point if the value is less than 18.5 it runs the line below
+else:
+  print("You are underweight.")
+
+#ALTERNATIVE CODE that counts from 18.5 to 35
+
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+
+bmi=weight/(height*height)
+print("Your BMI is "+"{:0.2f}".format(bmi))
+
+if bmi<18.5:
+  print("You have a under weight.")
+elif bmi<=24: #18.5-24 normal
+  print("You are normal weight.")
+elif bmi<=30: #25-30 over weight
+  print("You are over weight.")
+elif bmi<=34: #31-34 obese
+  print("You are obese.")
+else:
+  print("You are clinically obese.")
