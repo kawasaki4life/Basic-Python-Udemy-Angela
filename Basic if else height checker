@@ -1,0 +1,20 @@
+#Ask for the height of the customer
+print("Welcome to the rollercoaster!")
+#I use float because some people can remember the decimal points in their height but you can also use integer
+height = float(input("What is your height in cm? "))
+#always end with a colon
+#notice how print is on the next line and indented
+#Notice how >= is used denoting greater than or equal to 120
+if height>=120:
+  print("You can ride the roller coaster.")
+#make sure the format is the same with the else
+else:
+  print("Sorry you have to grow taller to ride.")
+  
+#input: 120
+#Output: You can ride the roller coaster.
+#input:  119 and lower
+#Output: Sorry you have to grow taller to ride
+  
+#To note when you say a=b you are assigning a with the value of b
+#But when you say a==b it means you are checking the value
