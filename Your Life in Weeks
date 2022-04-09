@@ -1,0 +1,13 @@
+#Here you input your age
+age = input("What is your current age?")
+#Then we get the difference from the life expectancy of 90 and we have to convert it to an integer
+diff_age=90-int(age)
+#Then we get the difference in days, weeks and months
+m=diff_age*12
+w=diff_age*52
+d=diff_age*365
+#By using f strings which is just an f before a string we can combine the data types seamlessly with curly braces
+print(f"You have {d} days, {w} weeks, and {m} months left")
+
+#Input: 56
+#Output: You have 14600 days, 2080 weeks, and 480 months left
