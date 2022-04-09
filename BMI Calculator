@@ -1,0 +1,16 @@
+#BMI Calculator
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+
+#Your height and weight is probably a decimal number so you should convert it to a float
+
+nh=float(height)
+nw=float(weight)
+
+#We need to round off the number so we can use int
+BMI=int(nw/(nh*nh))
+
+#Alternative operation
+BMI2=int(nw/(nh**2))
+
+print(BMI)
