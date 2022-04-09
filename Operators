@@ -1,0 +1,9 @@
+#Functions for mathematical equations
+
+print(round(2.6666666,2))
+
+#When you divide any number it becomes a float. To convert it to an integer we use the // function
+
+print(5//2)
+
+#The answer will be 2 type integer
