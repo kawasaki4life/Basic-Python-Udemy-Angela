@@ -1,0 +1,41 @@
+
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+#You can add strings together never forgetti
+#Conert it to lowercase
+name3=name1+name2
+name3=name3.lower()
+
+#checks if the names have been converted to lowercase and if combined
+print(name3)
+#sets variables to zero
+t1=0
+t2=0
+
+t1+=name3.count("t")
+t1+=name3.count("r")
+t1+=name3.count("u")
+t1+=name3.count("e")
+#checks for t1 outcome
+print(t1)
+t2+=name3.count("l")
+t2+=name3.count("o")
+t2+=name3.count("v")
+t2+=name3.count("e")
+#checks for t2 outcome
+print(t2)
+#bundles t1 and t2 and then converts them into integer and checks
+t3=int((f"{t1}{t2}"))
+print(t3)
+
+if t3<10 and t3>90:
+  print(f"Your score is {t3}%, you go together like coke and mentos.")
+elif t3>=40 and t3<=50:
+  print(f"Your score is {t3}%, you are alright together.")
+else:
+  print(f"Your score is {t3}%")
+  
+
+
