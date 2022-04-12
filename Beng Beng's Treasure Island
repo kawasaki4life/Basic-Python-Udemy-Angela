@@ -1,0 +1,46 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+print("Your grandfather's map has led you this far in search of the legendary treasure of Beng Beng. \nYou arrive in front of a dense forest. \nThe are two paths leading into the forest.")
+a=input("Do you head left or right?")
+if a=="left":
+  print("You stand before a pristine lake. You see an island in the middle of the lake. This is it the legendary Treasure Island of Beng Beng! You look over the waters and now a decision lies before you.")
+  b=input("Do you swim or wait a bit longer?")
+  if b=="wait":
+    print("Your patience has paid off a small raft has floated from the harbor on the island to the shores of the lake. You board the raft and paddle to the island. \n You disembark and follow a path into the island. A small house with three doors lie before you. \nA red, yellow and blue door await you. ")
+    c=input("Which door do you open? red, yellow, or blue?")
+    if c=="red":
+        print("You open the red door cautiously and see a pile or rubies on the floor. Suddenly you are pulled in by an unseen force. The door is shut and you can't get out. Game over.")
+    elif c=="yellow":
+        print("You open the door cautiously and see a pile of gold coins on the floor. You take a step into the door and wait. You take another step but nothing happens. Congratulaitons you have found the lgendary treasure of Beng Beng! Game Over.")
+    else:
+        print("You open the door cautiously and see a pile of blue diamonds on the floor. You decide to throw a rock you picked up outside to test for traps. The rock bounces of the floor and into the far wall. Nothing happens. You walk in and sit before the glittering pile.......for all eternity. Game Over.")
+  else:
+    print("You jump into the lake. The water is cold as it hits your skin. You swim casually for a few yards when you hear a sound you've never heard before 'ro ro rooo'. A small brown shape emerges from the water. The thing charges into you quickly and drags you underwater. You have been killed by the lake monster Marbles.")
+else:
+  print("You follow the path into the forest when suddenly you fall down into a pit. You stare into the darkness and then you see two large glowing eyes. \nThey are coming closer. \nYou can't get up. The large animal sits on your paralyzed body. You have been crushed to death by the monster of the pit Wendy!")
+    
