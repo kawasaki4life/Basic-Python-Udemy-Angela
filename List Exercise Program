@@ -1,0 +1,24 @@
+#List exercise program
+states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Connecticut", "Massachusetts", "Maryland", "South Carolina", "New Hampshire", "Virginia", "New York", "North Carolina", "Rhode Island", "Vermont", "Kentucky", "Tennessee", "Ohio", "Louisiana", "Indiana", "Mississippi", "Illinois", "Alabama", "Maine", "Missouri", "Arkansas", "Michigan", "Florida", "Texas", "Iowa", "Wisconsin", "California", "Minnesota", "Oregon", "Kansas", "West Virginia", "Nevada", "Nebraska", "Colorado", "North Dakota", "South Dakota", "Montana", "Washington", "Idaho", "Wyoming", "Utah", "Oklahoma", "New Mexico", "Arizona", "Alaska", "Hawaii"]
+
+print(states_of_america)
+
+#For retrieving a value within a list. At 0 it gives the first item on the list. At 49 it prints Hawaii. You can also count in reverse for example -1 will print Hawaii
+print(states_of_america[0]) 
+print(states_of_america[49])
+print(states_of_america[-1])
+
+#To change items in the list example I want to change Delaware to Dellaware
+states_of_america[0]="Dellaware"
+print(states_of_america[0])
+
+#To add items to a list
+states_of_america.append("Philippines")
+
+dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
+
+#when you want to add a list to another list.
+states_of_america.extend(dirty_dozen)
+
+print(states_of_america)
+
