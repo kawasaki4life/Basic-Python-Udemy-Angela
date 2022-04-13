@@ -1,0 +1,31 @@
+#You as a pirate need to indicate on the map where your treasure is buried
+
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+#the first number is the column and the second number is the row ex. 31 should be at the top right
+position = input("Where do you want to put the treasure? ")
+
+#this line converts the input to a list
+sp=list(position)
+print(sp)
+
+#stores the value from the lists and converts them to integers
+a=int(sp[0])
+b=int(sp[1])
+
+#notice why b comes first because b is valued 1 in our example meaning map[1-1]=map[0]=row1
+#the second part is row1[3-1]=row1[2] looking at the diagram above we have achieved the desired outcome
+#remember that counting starts from 0
+
+map[b-1][a-1]="X"
+
+#If the program asked for row first then column then it would look like this
+# map[a-1][b-1]="X"
+
+
+
+
+print(f"{row1}\n{row2}\n{row3}")
