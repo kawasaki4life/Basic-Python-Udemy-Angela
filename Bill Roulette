@@ -1,0 +1,22 @@
+# Split string method asks for the names of the people at the table
+
+names_string = input("Give me everybody's names, separated by a comma. ")
+
+#this function splits a string by variable defined here it's comma and space
+names = names_string.split(", ")
+#never forget to import random
+import random
+
+# names=["mel", "jen", "beng", "dumbkid"]
+
+print(names)
+#since we begin counting at 0 we need to set it to -1
+a=len(names)-1
+
+b=random.randint(0,a)
+print(f"The person who will pay is {names[b]}")
+
+#Python already has a function which pulls out an item in a list randomly
+c=random.choice(names)
+print(f"The person who will pay is {c}")
+
