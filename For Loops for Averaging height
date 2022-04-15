@@ -1,0 +1,26 @@
+
+#Requesting for the heights and then identifying the split by just a space. The data is placed in a list. 
+student_heights = input("Input a list of student heights ").split()
+# a for loop to convert the strings in student_heights to integer
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+
+
+print(student_heights)
+
+a=0 #total height
+#every item in student_heights is labeled student
+#so for every student the "for function will run"
+for student in student_heights:
+  a+=(student)
+
+num_students=0
+for student in student_heights:
+  num_students+=1
+  
+print(num_students)  
+b=a/(num_students) #average height
+print(b)
+
+
+
