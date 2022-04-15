@@ -1,0 +1,23 @@
+#Requests the scores and splits them for every space. Outcome is a list
+student_scores = input("Input a list of student scores ").split()
+
+#the len function gets the number of items in the student_scores list
+for n in range(0, len(student_scores)):
+  #a loop for converting all inside the list into integer
+  student_scores[n] = int(student_scores[n])
+print(student_scores)
+
+#We have to define the variable first
+highest_score=0
+
+#sometimes you don't need to place else to make an if function work
+for score in student_scores:
+  if score > highest_score:
+    highest_score = score
+  
+print(f"The highest score in the class is: {highest_score}")
+
+#Shorter code for python only which makes use of the max function
+print(f"The highest score in the class is: {max(student_scores)}")
+  
+    
