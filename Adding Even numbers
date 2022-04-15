@@ -1,0 +1,10 @@
+
+a=0
+#The first number is always included in the counting while the 2nd number must be 1 more than the intended range.
+#if range(2,100,2) then the max it would reach is 98
+for n in range(2,101,2):
+  a=n+a
+  
+
+print(a)
+  
