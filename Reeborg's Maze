@@ -4,15 +4,20 @@ def turn_right():
     turn_left()
     turn_left()           
 
-#Okay first we have to get a point of reference for Reeborg we need him to hit a wall
+#Okay first we have to get a point of reference for Reeborg we need him to hit a wall and i choose the north
+while not is_facing_north():
+    turn_left()
+#Now that he's facing north we march him up to a wall
 while front_is_clear():
     move()
 turn_left()
-#The trick with mazes is that you follow a wall with your right hand and eventually you'll get to the exit.
-#When you turn left after hitting a wall that means your right side is now facing the wall
+#The trick with mazes is that you follow a wall with your right hand along the wall and eventually you'll get to the exit.
+#When you turn left after hitting a wall that means reeborg right side is now facing the wall
+
 
 #Now you've hit a wall and have turned left so logically the first condition won't trigger but we have to prioritize turning right first
-#So from there we prioritize going forward
+#If we can't go right meaning there's wall there moving foward means we are following the wall
+
 #if both the right and front is not clear that means we have no choice but to turn left
 #After turning left we know that the right side has a wall since we were facing in that direction previously so we must move forward
 
@@ -24,3 +29,5 @@ while not at_goal():
         move()
     else:
         turn_left()
+
+#Reeborg will now hug the wall and eventually find escape
