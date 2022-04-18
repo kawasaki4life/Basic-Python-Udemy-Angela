@@ -1,11 +1,20 @@
+#turn right function to lessen the lines of code
 def turn_right():
     turn_left()
     turn_left()
     turn_left()           
 
+#Okay first we have to get a point of reference for Reeborg we need him to hit a wall
 while front_is_clear():
     move()
 turn_left()
+#The trick with mazes is that you follow a wall with your right hand and eventually you'll get to the exit.
+#When you turn left after hitting a wall that means your right side is now facing the wall
+
+#Now you've hit a wall and have turned left so logically the first condition won't trigger but we have to prioritize turning right first
+#So from there we prioritize going forward
+#if both the right and front is not clear that means we have no choice but to turn left
+#After turning left we know that the right side has a wall since we were facing in that direction previously so we must move forward
 
 while not at_goal():
     if right_is_clear():
