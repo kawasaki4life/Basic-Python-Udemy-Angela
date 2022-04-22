@@ -25,6 +25,7 @@ print(f'Pssst, the solution is {chosen_word}.')
 #Create blanks
 display = []
 for _ in range(word_length):
+#you can also use adisplay.append("_")
     display += "_"
 print(display)
 while not end_of_game:
