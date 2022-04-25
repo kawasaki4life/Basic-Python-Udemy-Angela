@@ -1,0 +1,33 @@
+student_scores = {
+  "Harry": 81,
+  "Ron": 78,
+  "Hermione": 99, 
+  "Draco": 74,
+  "Neville": 62,
+}
+#Create an empty dictionary
+student_grades = {}
+
+#Note that each student in student_scores is the Key so it's the names for student in student_scores:
+for student in student_scores:
+  # how to retrieve the value in a dictionary
+  # variable to store = ditctionary[key of dictionary]
+  score = student_scores[student]
+  if score > 90:
+  #remember that the student in our loop is now the keys in the student_scores
+    #student_grades[Harry] = "Outstanding"
+    student_grades[student] = "Outstanding"
+  elif (score>=81) and (score<91):
+    student_grades[student]  = "Exceeds Expectations"
+  elif (score>=71) and (score<81):
+    student_grades[student] =  "Acceptable"
+  else:
+    student_grades[student] = "Fail"
+  print(score)
+     
+print(student_grades)
+
+Output:
+{'Harry': 'Exceeds Expectations','Ron': 'Acceptable','Hermione': 'Outstanding', 'Draco': 'Acceptable','Neville': 'Fail',}
+
+
